@@ -1,0 +1,28 @@
+{
+  "name": "hopaverkefni1",
+  "version": "1.0.0",
+  "description": "hopaverkefni 1 - vefforritun 1",
+  "main": "index.js",
+  "scripts": {
+    "browser-sync": "browser-sync start --server --files index.html styles.scss",
+    "sass": "node-sass styles.scss styles.css -w",
+    "dev": "concurrently npm:sass npm:browser-sync"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fsa3/vef1-2020-h1.git"
+  },
+  "author": "bbm5@hi.is, fsa3@hi.is",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fsa3/vef1-2020-h1/issues"
+  },
+  "homepage": "https://github.com/fsa3/vef1-2020-h1#readme",
+  "devDependencies": {
+    "browser-sync": "^2.26.12",
+    "concurrently": "^5.3.0"
+  },
+  "dependencies": {
+    "node-sass": "^4.14.1"
+  }
+}
