@@ -8,6 +8,14 @@ Fannar Steinn Aðalsteinsson, [fsa3@hi.is](mailto:fsa3@hi.is)
 
 --Setja nöfnin ykkar hér--
 
+## NPM tól
+
+Það er skripta sem heitir install þannig hægt að keyra npm install til að sækja öll tólin.
+
+Svo er dev skripta sem keyrir browser-sync og sass þýðanda.
+
+Lint skriptan lintar svo allt scsss.
+
 ## Global styles
 
 Búið að skilgreina style fyrir h1, h2 0g h3 þannig nota það alls staðar þar sem á við.
