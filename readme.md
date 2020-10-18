@@ -22,4 +22,4 @@ Búið að skilgreina style fyrir h1, h2 0g h3 þannig nota það alls staðar �
 
 Líka búinn að skilgreina klasana .brown-text og .brown-text__bold og gray-text
 
-Þannig það ætti að vera hægt að nota þessa styles á mjög mikið af texta í verkefninu
+Þannig það ætti að vera hægt að nota þessa styles á mjög mikið af texta í verkefninu og það nægir líka á mörgum stöðum að skilgreina bara h1, h2 osfrv þar sem það eru komnir stílar á það
