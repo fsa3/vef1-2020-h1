@@ -51,9 +51,16 @@ a {
 button {
   width: 250px;
   height: 50px;
+  font-family: 'Poppins', sans-serif;
   background-color: transparent;
   border: 1px solid #E3CDB1;
   @extend .brown-text__bold;
+  transition: color 300ms ease-in-out, background-color 300ms ease-in-out;
+
+  &:hover {
+    color: #FFFFFF;
+    background-color: #E3CDB1;
+  }
 }
 
 .gray-text {

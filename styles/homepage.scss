@@ -1,0 +1,68 @@
+@import './config';
+
+.hero {
+  height: 800px;
+  background-color: #FAFAFA;
+
+  background-image: url(./img/cake-background.png);
+  background-repeat: no-repeat;
+  background-position: bottom right;
+
+  .grid {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  &__buttons {
+    margin-top: 30px;
+  }
+}
+
+.book {
+  height: 880px;
+  background: linear-gradient(180deg, #F7F1EB 75%, #FFFFFF 50%);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  &__content {
+    margin-top: 5%;
+  }
+
+  button {
+    margin-top: 30px;
+  }
+
+  &__image {
+    display: flex;
+    justify-content: flex-end;
+    margin: 20px 0;
+  }
+
+  img {//þarf að laga hér!!!
+    background-color: rgba(0, 0, 0, 0.0001);
+    box-shadow: 0px 2px 24px rgba(0, 0, 0, 0.05);
+  }
+}
+
+.bottom-recipes {
+  height: 740px;
+  background: linear-gradient(180deg, #FFFFFF 50%, #FAFAFA 50%);
+
+  h2 span {
+    color: #D0D0D0;
+  }
+
+  &__button-row {
+    display: flex;
+    align-items: center;
+  }
+
+  &__button {
+    display: flex;
+    justify-content: center;
+  }
+}
