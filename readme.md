@@ -1,6 +1,6 @@
 # Hópaverkefni 1 - Vefforritun 1
 
-## Höfunar
+## Höfundar
 
 Björn Borgar Magnússon, [bbm5@hi.is](mailto:bbm5@hi.is)
 
