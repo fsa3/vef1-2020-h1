@@ -1,0 +1,26 @@
+header {
+  background-color: #FFFFFF;
+  height: 80px;
+  position: sticky;
+  top: 0;
+  display: flex;
+
+  .header-content {
+    margin: 0 auto;
+    max-width: 1290px;
+    flex-grow: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .menu {
+    width: 225px;
+    display: flex;
+    justify-content: space-between;
+
+    font-size: 15px;
+    line-height: 22px;
+    color: #9B9B9B;
+  }
+}

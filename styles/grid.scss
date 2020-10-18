@@ -1,0 +1,53 @@
+@import './config';
+
+.grid {
+  margin: 0 auto;
+  max-width: 1290px;
+  overflow: hidden;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
+.col {
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 100%;
+}
+
+@for $i from 1 through $columns {
+  .col-#{$i} {
+    width: ($i/$columns*100) * 1%;
+  }
+  .offset-col-#{$i} {
+    margin-left: ($i/$columns*100) * 1%;
+  }
+}
+
+@media (max-width: $max-width-md) {
+  @for $i from 1 through $columns {
+    .col-md-#{$i} {
+      width: ($i/$columns*100) * 1%;
+    }
+
+    .offset-col-md-#{$i} {
+      margin-left: ($i/$columns*100) * 1%;
+    }
+  }
+}
+
+@media (max-width: $max-width-sm) {
+  @for $i from 1 through $columns {
+    .col-sm-#{$i} {
+      width: ($i/$columns*100) * 1%;
+    }
+
+    .offset-col-sm-#{$i} {
+      margin-left: ($i/$columns*100) * 1%;
+    }
+  }
+}

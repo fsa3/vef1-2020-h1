@@ -1,0 +1,22 @@
+@import './config';
+
+.hero {
+  height: 800px;
+  background-color: #FAFAFA;
+
+  background-image: url(./img/cake-background.png);
+  background-repeat: no-repeat;
+  background-position: bottom right;
+
+  .grid {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  &__buttons {
+    margin-top: 30px;
+  }
+
+}
