@@ -61,13 +61,24 @@
 .bottom-recipes {
   height: 740px;
   background: linear-gradient(180deg, #FFFFFF 50%, #FAFAFA 50%);
+}
+
+.seemore-row {
+  margin: 40px 0;
+  display: flex;
+  align-items: center;
 
   &__button-row {
     display: flex;
     align-items: center;
   }
 
+  &__line {
+    width: 35.7%;
+  }
+
   &__button {
+    width: 28.6%;
     display: flex;
     justify-content: center;
   }
