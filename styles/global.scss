@@ -9,6 +9,7 @@
 body {
   font-family: 'Poppins', sans-serif;
   padding: 0 10px;
+
 }
 
 h1, h2, h3, h4 {
@@ -57,13 +58,13 @@ button {
   height: 50px;
   font-family: 'Poppins', sans-serif;
   background-color: transparent;
-  border: 1px solid #E3CDB1;
+  border: 1px solid $brown;
   @extend .brown-text__bold;
   transition: color 300ms ease-in-out, background-color 300ms ease-in-out;
 
   &:hover {
-    color: #FFFFFF;
-    background-color: #E3CDB1;
+    color: $white;
+    background-color: $brown;
   }
 }
 
@@ -72,7 +73,7 @@ button {
   font-weight: 300;
   font-size: 14px;
   line-height: 21px;
-  color: #9B9B9B;
+  color: $grey;
 }
 
 .brown-text {
@@ -80,7 +81,7 @@ button {
   font-weight: normal;
   font-size: 16px;
   line-height: 24px;
-  color: #E3CDB1;
+  color: $brown;
 
   &__bold {
     @extend .brown-text;
