@@ -25,8 +25,7 @@
   background: linear-gradient(180deg, #F7F1EB 75%, #FFFFFF 50%);
 
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  align-items: center;
 
   &__content {
     margin-top: 5%;
@@ -48,13 +47,20 @@
   }
 }
 
+.latest-recipes {
+  height: 1250px;
+  background: linear-gradient(0deg, #FAFAFA 65%, #FFFFFF 50%);
+  display: flex;
+  align-items: center;
+
+  &__title {
+    margin-bottom: 30px;
+  }
+}
+
 .bottom-recipes {
   height: 740px;
   background: linear-gradient(180deg, #FFFFFF 50%, #FAFAFA 50%);
-
-  h2 span {
-    color: #D0D0D0;
-  }
 
   &__button-row {
     display: flex;
