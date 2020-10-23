@@ -1,6 +1,8 @@
+@import './config';
+
 header {
   background-color: #FFFFFF;
-  height: 80px;
+  height: 5rem;
   position: sticky;
   top: 0;
   display: flex;
@@ -15,7 +17,7 @@ header {
   }
 
   .menu {
-    width: 225px;
+    width: 14rem;
     display: flex;
     justify-content: space-between;
   }
@@ -23,6 +25,6 @@ header {
   a {
     font-size: 15px;
     line-height: 22px;
-    color: #9B9B9B;
+    color: $grey;
   }
 }

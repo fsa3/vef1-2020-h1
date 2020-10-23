@@ -4,6 +4,9 @@
   margin: 0 auto;
   max-width: 1290px;
   overflow: hidden;
+  @media (max-width: 1289px) {
+    padding: 0 10px;
+  }
 }
 
 .row {

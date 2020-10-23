@@ -1,7 +1,7 @@
 @import './config';
 
 .hero {
-  height: 800px;
+  height: 90vh;
   background-color: #FAFAFA;
 
   background-image: url(./img/cake-background.png);
@@ -16,16 +16,33 @@
   }
 
   &__buttons {
-    margin-top: 30px;
+    margin-top: 1.875rem;
+  }
+}
+
+.latest-recipes {
+  background: linear-gradient(0deg, #FAFAFA 65%, #FFFFFF 50%);
+  display: flex;
+  align-items: center;
+
+  .grid {
+    margin-top: 15rem;
+    margin-bottom: 15rem;
+  }
+
+  &__title {
+    margin-bottom: 1.875rem;
   }
 }
 
 .book {
-  height: 880px;
+  //height: 880px;
   background: linear-gradient(180deg, #F7F1EB 75%, #FFFFFF 50%);
 
   display: flex;
   align-items: center;
+
+  padding: 5rem 0;
 
   &__content {
     margin-top: 5%;
@@ -38,7 +55,7 @@
   &__image {
     display: flex;
     justify-content: flex-end;
-    margin: 20px 0;
+    margin: 1.25rem 0;
   }
 
   img {//þarf að laga hér!!!
@@ -47,39 +64,7 @@
   }
 }
 
-.latest-recipes {
-  height: 1250px;
-  background: linear-gradient(0deg, #FAFAFA 65%, #FFFFFF 50%);
-  display: flex;
-  align-items: center;
-
-  &__title {
-    margin-bottom: 30px;
-  }
-}
-
 .bottom-recipes {
   height: 740px;
   background: linear-gradient(180deg, #FFFFFF 50%, #FAFAFA 50%);
-}
-
-.seemore-row {
-  margin: 40px 0;
-  display: flex;
-  align-items: center;
-
-  &__button-row {
-    display: flex;
-    align-items: center;
-  }
-
-  &__line {
-    width: 35.7%;
-  }
-
-  &__button {
-    width: 28.6%;
-    display: flex;
-    justify-content: center;
-  }
 }

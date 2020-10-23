@@ -3,7 +3,7 @@
 
 .subscribe {
   background-color: #000000;
-  height: 340px;
+  height: 21.25rem;
   color: #FFFFFF;
 
   display: flex;
@@ -20,8 +20,8 @@
 
   .email-label {
     font-weight: 500;
-    font-size: 14px;
-    line-height: 21px;
+    font-size: 0.875rem;
+    line-height: 1.3125;
   }
 
   input {
@@ -29,7 +29,7 @@
     background-color: transparent;
     @extend h3;
     color: #FFFFFF;
-    padding-bottom: 12px;
+    padding-bottom: 0.75rem;
     border: none;
     border-bottom: 1px solid #FFFFFF;
 
@@ -46,10 +46,10 @@
 }
 
 .socials {
-  height: 330px;
+  height: 20.625rem;
 
   hr {
-    margin-top: 70px;
+    margin-top: 4rem;
   }
 
   .content-row {
@@ -70,8 +70,8 @@
   &__links {
     width: 100%;
     :nth-child(2) {
-      margin-left: 10px;
-      margin-right: 10px;
+      margin-left: 1rem;
+      margin-right: 1rem;
     }
   }
 
