@@ -18,14 +18,33 @@
   &__buttons {
     margin-top: 1.875rem;
   }
+
+  @media (max-width: 750px) {
+    background-size: cover;
+    background-position: center;
+
+    .col-sm-12 {
+      width: 100%;
+      text-align: center;
+    }
+
+    .grid {
+      padding-top: 5rem;
+      justify-content: flex-start;
+    }
+
+    p {
+      display: none;
+    }
+  }
 }
 
 .latest-recipes {
   background: linear-gradient(0deg, #FAFAFA 65%, #FFFFFF 50%);
   display: flex;
   align-items: center;
-  padding-top: 10rem;
-  padding-bottom: 10rem;
+  padding-top: 8rem;
+  padding-bottom: 5rem;
 
   &__title {
     margin-bottom: 1.875rem;
@@ -38,7 +57,8 @@
   display: flex;
   align-items: center;
 
-  padding: 5rem 0;
+  padding-top: 5rem;
+  padding-top: 4rem;
 
   &__content {
     margin-top: 5%;
@@ -52,11 +72,20 @@
     display: flex;
     justify-content: flex-end;
     margin: 1.25rem 0;
+    overflow: hidden;
   }
 
-  img {//þarf að laga hér!!!
+  img {
+    object-fit: scale-down;
+    max-width: 100%;
     margin-bottom: 8px;
     box-shadow: -5px 5px 24px rgba(0, 0, 0, 0.2);
+  }
+
+  @media (max-width: 700px) {
+    span {
+      display: none;
+    }
   }
 }
 

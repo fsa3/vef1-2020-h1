@@ -114,7 +114,7 @@ header {
     ul {
       position: absolute;
       right: 0px;
-      max-height: 100vh;
+      height: 80vh;
       width: 100%;
       top: 69px;
       background-color: #FAFAFA;
@@ -126,11 +126,6 @@ header {
       overflow: hidden;
       max-height: 0;
       transition: max-height 300ms ease-in-out;
-    }
-
-    li {
-      padding-top: 2.5rem;
-      padding-bottom: 2.5rem;
     }
 
     a {
