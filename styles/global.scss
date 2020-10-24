@@ -8,6 +8,12 @@
 
 html {
   font-size: 16px;
+  @media(max-width: $max-width-md) {
+    font-size: 14px;
+  }
+  @media(max-width: $max-width-sm) {
+    font-size: 13px;
+  }
 }
 
 body {
@@ -23,6 +29,9 @@ h1 {
   font-size: 3.75rem;
   line-height: 5rem;
   color: #000000;
+  @media(max-width: $max-width-md) {
+    font-size: 2.5rem;
+  }
 }
 
 h2 {
@@ -33,12 +42,19 @@ h2 {
   span {
     color: #D0D0D0;
   }
+
+  @media(max-width: $max-width-sm) {
+    font-size: 1.55rem;
+  }
 }
 
 h3 {
   font-weight: bold;
   font-size: 1.375rem;
   line-height: 1.8125rem;
+  @media(max-width: $max-width-md) {
+    font-size: 1.4rem;
+  }
 }
 
 p {
@@ -109,5 +125,23 @@ button {
     width: 28.6%;
     display: flex;
     justify-content: center;
+  }
+
+  @media (max-width: $max-width-sm) {
+    margin-left: auto;
+    margin-right: auto;
+    &__line {
+      display: none;
+    }
+    &__button {
+      width: 100%;
+    }
+  }
+}
+
+@media (max-width: $max-width-sm) {
+  .sm-center {
+    margin: auto;
+    text-align: center;
   }
 }

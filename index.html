@@ -11,14 +11,20 @@
   <body>
 
     <header>
-      <div class="header-content">
-        <a href="index.html" class="logo"><img src="./img/yumym.png" alt="yum & yum"></a>
-        <div class="menu">
-          <a href="./pages/latestrecipes.html">Recipes</a>
-          <a>Videos</a>
-          <a>About us</a>
+      <nav>
+        <div class="logo">
+          <h1>yum & yum</h1>
+          <a href="../index.html"><img src="../img/yumym.png" alt="yum & yum"></a>
         </div>
-      </div>
+        <input class="menu-btn" type="checkbox" id="menu-btn"/>
+        <label class="menu-icon" for="menu-btn"><span class="nav-icon"></span></label>
+        <ul>
+          <li class="hidden"><a href="../index.html">Home</a></li>
+          <li><a href="../pages/latestrecipes.html">Recipes</a></li>
+          <li><a>Videos</a></li>
+          <li><a>About us</a></li>
+        </ul>
+      </nav>
     </header>
 
     <main>
@@ -195,15 +201,15 @@
       <section class="subscribe">
         <div class="grid">
           <div class="row">
-            <div class="col col-6">
+            <div class="col col-6 col-md-5 col-sm-12 sm-center">
               <p class="brown-text__bold">Craving more?</p>
               <h2>Subscribe to our newsletter</h2>
             </div>
-            <div class="col col-3">
+            <div class="col col-3 col-md-4 col-sm-10 offset-col-sm-1">
               <p class="email-label">Email</p>
               <input type="email" placeholder="Enter your mail here"/>
             </div>
-            <div class="col col-3">
+            <div class="col col-3 col-sm-12">
               <div class="subscribe__button"><button>Subscribe now</button></div>
             </div>
           </div>

@@ -22,6 +22,9 @@
     font-weight: 500;
     font-size: 0.875rem;
     line-height: 1.3125;
+    @media(max-width: $max-width-sm) {
+      margin-top: 2rem;
+    }
   }
 
   input {
@@ -37,11 +40,19 @@
       outline: none;
       border-bottom: 1px solid #E3CDB1;
     }
+
+    @media(max-width: $max-width-md) {
+      font-size: 1.15rem;
+    }
   }
 
   &__button{
     display: flex;
     justify-content: flex-end;
+    @media(max-width: $max-width-sm) {
+      justify-content: center;
+      margin-top: 3rem;
+    }
   }
 }
 
