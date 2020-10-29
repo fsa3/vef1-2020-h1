@@ -80,15 +80,9 @@ button {
   transition: color 300ms ease-in-out, background-color 300ms ease-in-out;
   outline: none;
 
-<<<<<<< HEAD
-  &:hover {
-    color: #ffffff;
-    background-color: #E3CDB1;
-=======
   &:hover, &:focus {
     color: $white;
     background-color: $brown;
->>>>>>> 261e41ed9d43205ff16e23da651b125bbfb91a8d
   }
 
   &:active {
@@ -100,19 +94,6 @@ button {
 
 .gray-text {
   font-weight: 300;
-<<<<<<< HEAD
-  font-size: 14px;
-  line-height: 21px;
-  color: #9b9b9b;
-}
-
-.brown-text {
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 24px;
-  color: #E3CDB1;
-=======
   font-size: 0.875rem;
   line-height: 1.3125rem;
   color: $grey;
@@ -122,15 +103,11 @@ button {
   font-size: 1rem;
   line-height: 1.5rem;
   color: $brown;
->>>>>>> 261e41ed9d43205ff16e23da651b125bbfb91a8d
 
   &__bold {
     @extend .brown-text;
     font-weight: 500;
   }
-<<<<<<< HEAD
-}
-=======
 }
 
 .seemore-row {
@@ -171,4 +148,3 @@ button {
     text-align: center;
   }
 }
->>>>>>> 261e41ed9d43205ff16e23da651b125bbfb91a8d
