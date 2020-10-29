@@ -9,20 +9,26 @@
         <link rel="stylesheet" href="../styles.css">
     </head>
     <body>
-        <header>
-            <div class="header-content">
-              <a href="../index.html" class="logo"><img src="../img/yumym.png" alt="yum & yum"></a>
-              <div class="menu">
-                <a>Recipes</a>
-                <a>Videos</a>
-                <a>About us</a>
-              </div>
-            </div>
-        </header>
+      <header>
+        <nav>
+          <div class="logo">
+            <h1>yum & yum</h1>
+            <a href="../index.html"><img src="../img/yumym.png" alt="yum & yum"></a>
+          </div>
+          <input class="menu-btn" type="checkbox" id="menu-btn"/>
+          <label class="menu-icon" for="menu-btn"><span class="nav-icon"></span></label>
+          <ul>
+            <li class="hidden"><a href="../index.html">Home</a></li>
+            <li><a href="#">Recipes</a></li>
+            <li><a href="./videorecipes.html">Videos</a></li>
+            <li><a>About us</a></li>
+          </ul>
+        </nav>
+      </header>
 
         <main>
             <section class="hero">
-                <div class="grid"> 
+                <div class="grid">
                     <div class="row">
                         <div class="col col-9">
                             <div>
@@ -116,7 +122,7 @@
                                 <p> Halve your burger buns and lightly toast them on the griddle or in the pan. Also great with a chopped salad.</p>
                             </div>
                         </div>
-                    </div>                    
+                    </div>
                 </div>
             </section>
             <section class="bottom-recipes">
@@ -176,9 +182,9 @@
                     </div>
                   </div>
                   <div class="seemore-row row">
-                    <div class="col seemore-row__line"><hr></div>
+                    <div class="seemore-row__line"><hr></div>
                     <div class="col seemore-row__button"><button>See more</button></div>
-                    <div class="col seemore-row__line"><hr></div>
+                    <div class="seemore-row__line"><hr></div>
                   </div>
                 </div>
               </section>

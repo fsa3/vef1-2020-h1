@@ -94,23 +94,5 @@
   padding-top: 3rem;
   padding-bottom: 5rem;
 
-<<<<<<< HEAD
-  &__button-row {
-    display: flex;
-    align-items: center;
-  }
-
-  &__line {
-    width: 35.7%;
-  }
-
-  &__button {
-    width: 28.6%;
-    display: flex;
-    justify-content: center;
-  }
-}
-=======
   @include media-part-background(40%, 45%, 25%, $background-gray);
 }
->>>>>>> 261e41ed9d43205ff16e23da651b125bbfb91a8d
