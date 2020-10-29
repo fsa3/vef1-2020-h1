@@ -1,8 +1,8 @@
 @import './config';
 
 .hero {
-  height: 800px;
-  background-color: #FAFAFA;
+  height: 90vh;
+  background-color: $background-gray;
 
   background-image: url(./img/cake-background.png);
   background-repeat: no-repeat;
@@ -16,58 +16,85 @@
   }
 
   &__buttons {
-    margin-top: 30px;
+    margin-top: 1.875rem;
+  }
+
+  @media (max-width: 750px) {
+    background-size: cover;
+    background-position: center;
+
+    .col-sm-12 {
+      width: 100%;
+      text-align: center;
+    }
+
+    .grid {
+      padding-top: 5rem;
+      justify-content: flex-start;
+    }
+
+    p {
+      display: none;
+    }
   }
 }
 
+.latest-recipes {
+  display: flex;
+  align-items: center;
+  padding-top: 8rem;
+  padding-bottom: 5rem;
+
+  &__title {
+    margin-bottom: 1.875rem;
+  }
+
+  @include media-part-background(40%, 30%, 15%, $background-gray);
+}
+
 .book {
-  height: 880px;
-  background: linear-gradient(180deg, #F7F1EB 75%, #FFFFFF 50%);
+  @include part-background(15%, $background-brown, false);
 
   display: flex;
   align-items: center;
+
+  padding-top: 5rem;
+  padding-top: 4rem;
 
   &__content {
     margin-top: 5%;
   }
 
   button {
-    margin-top: 30px;
+    margin-top: 1.875rem;
   }
 
   &__image {
     display: flex;
     justify-content: flex-end;
-    margin: 20px 0;
+    margin: 1.25rem 0;
+    overflow: hidden;
   }
 
-  img {//þarf að laga hér!!!
-    background-color: rgba(0, 0, 0, 0.0001);
-    box-shadow: 0px 2px 24px rgba(0, 0, 0, 0.05);
+  img {
+    object-fit: scale-down;
+    max-width: 100%;
+    margin-bottom: 8px;
+    box-shadow: -5px 5px 24px rgba(0, 0, 0, 0.2);
   }
-}
 
-.latest-recipes {
-  height: 1250px;
-  background: linear-gradient(0deg, #FAFAFA 65%, #FFFFFF 50%);
-  display: flex;
-  align-items: center;
-
-  &__title {
-    margin-bottom: 30px;
+  @media (max-width: 700px) {
+    span {
+      display: none;
+    }
   }
 }
 
 .bottom-recipes {
-  height: 740px;
-  background: linear-gradient(180deg, #FFFFFF 50%, #FAFAFA 50%);
-}
+  padding-top: 3rem;
+  padding-bottom: 5rem;
 
-.seemore-row {
-  margin: 40px 0;
-  display: flex;
-  align-items: center;
-
+<<<<<<< HEAD
   &__button-row {
     display: flex;
     align-items: center;
@@ -83,3 +110,7 @@
     justify-content: center;
   }
 }
+=======
+  @include media-part-background(40%, 45%, 25%, $background-gray);
+}
+>>>>>>> 261e41ed9d43205ff16e23da651b125bbfb91a8d

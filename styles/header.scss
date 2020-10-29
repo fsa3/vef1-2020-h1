@@ -1,28 +1,139 @@
+@import './config';
+
 header {
-  background-color: #FFFFFF;
-  height: 80px;
+  background-color: $white;
+  height: 70px;
+  width: 100%;
   position: sticky;
   top: 0;
-  display: flex;
+  z-index: 3;
 
-  .header-content {
+  h1 {
+    display: none;
+  }
+
+  nav {
     margin: 0 auto;
+    width: 100%;
+    height: 70px;
     max-width: 1290px;
-    flex-grow: 1;
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
 
-  .menu {
-    width: 225px;
+  ul {
     display: flex;
     justify-content: space-between;
+    width: 14rem;
+    list-style: none;
   }
 
   a {
     font-size: 15px;
     line-height: 22px;
-    color: #9B9B9B;
+    color: $grey;
+  }
+
+  .hidden {
+    display: none;
+  }
+
+  .menu-btn {
+    display: none;
+  }
+
+  .menu-icon {
+    display: none;
+    padding: 1.3rem 0px;
+    position: relative;
+    cursor: pointer;
+  }
+
+  .nav-icon {
+    background-color: $black;
+    display: block;
+    height: 2px;
+    width: 30px;
+    position: relative;
+    transition: background-color 200ms ease-out;
+
+    &:before {
+      @extend .nav-icon;
+      content: "";
+      height: 100%;
+      position: absolute;
+      width: 100%;
+      top: 10px;
+      transition: all 200ms ease-out;
+    }
+
+    &:after {
+      @extend .nav-icon:before;
+      top: -10px;
+    }
+  }
+
+  .menu-btn:checked ~ ul {
+    max-height: 100vh;
+  }
+
+  .menu-btn:checked ~ .menu-icon .nav-icon{
+    background: transparent;
+  }
+  .menu-btn:checked ~ .menu-icon .nav-icon:before {
+    top: 0;
+    background-color: $black;
+    transform: rotate(-45deg);
+  }
+  .menu-btn:checked ~ .menu-icon .nav-icon:after {
+    top: 0;
+    background-color: $black;
+    transform: rotate(45deg);
+  }
+
+  @media(max-width: 1290px) {
+    nav {
+      padding: 0 1rem;
+    }
+  }
+
+  @media(max-width: $max-width-sm){
+    .menu-icon {
+      display: block;
+    }
+
+    .hidden {
+      display: block;
+    }
+
+    .logo {
+      padding-bottom: 1.5rem;
+    }
+
+    ul {
+      position: absolute;
+      right: 0px;
+      height: 80vh;
+      width: 100%;
+      top: 69px;
+      background-color: $background-gray;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+
+      overflow: hidden;
+      max-height: 0;
+      transition: max-height 300ms ease-in-out;
+    }
+
+    a {
+      color: #000000;
+      font-family: 'Playfair Display', serif;
+      font-weight: bold;
+      font-size: 4.6rem;
+      line-height: 7rem;
+    }
   }
 }

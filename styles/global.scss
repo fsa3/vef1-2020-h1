@@ -6,10 +6,18 @@
   box-sizing: border-box;
 }
 
+html {
+  font-size: 16px;
+  @media(max-width: $max-width-md) {
+    font-size: 14px;
+  }
+  @media(max-width: $max-width-sm) {
+    font-size: 13px;
+  }
+}
+
 body {
   font-family: 'Poppins', sans-serif;
-  padding: 0 10px;
-
 }
 
 h1, h2, h3, h4 {
@@ -17,36 +25,45 @@ h1, h2, h3, h4 {
 }
 
 h1 {
-  font-style: normal;
   font-weight: bold;
-  font-size: 60px;
-  line-height: 80px;
-  color: #000000;
+  font-size: 3.75rem;
+  line-height: 5rem;
+  color: $black;
+  @media(max-width: $max-width-md) {
+    font-size: 3rem;
+  }
+  @media(max-width: ($max-width-sm+90)) {
+    font-size: 2.5rem;
+  }
 }
 
 h2 {
-  font-style: normal;
   font-weight: bold;
-  font-size: 40px;
-  line-height: 53px;
+  font-size: 2.5rem;
+  line-height: 3.3125rem;
 
   span {
-    color: #D0D0D0;
+    color: $light-grey;
+  }
+
+  @media(max-width: $max-width-sm) {
+    font-size: 1.55rem;
   }
 }
 
 h3 {
-  font-style: normal;
   font-weight: bold;
-  font-size: 22px;
-  line-height: 29px;
+  font-size: 1.375rem;
+  line-height: 1.8125rem;
+  @media(max-width: $max-width-md) {
+    font-size: 1.4rem;
+  }
 }
 
 p {
-  font-style: normal;
   font-weight: 300;
-  font-size: 18px;
-  line-height: 32px;
+  font-size: 1.125rem;
+  line-height: 2rem;
 }
 
 a {
@@ -54,23 +71,36 @@ a {
 }
 
 button {
-  width: 250px;
-  height: 50px;
+  width: 15.625rem;
+  height: 3.125rem;
   font-family: 'Poppins', sans-serif;
   background-color: transparent;
   border: 1px solid #E3CDB1;
   @extend .brown-text__bold;
   transition: color 300ms ease-in-out, background-color 300ms ease-in-out;
+  outline: none;
 
+<<<<<<< HEAD
   &:hover {
     color: #ffffff;
     background-color: #E3CDB1;
+=======
+  &:hover, &:focus {
+    color: $white;
+    background-color: $brown;
+>>>>>>> 261e41ed9d43205ff16e23da651b125bbfb91a8d
+  }
+
+  &:active {
+    @extend button;
+    transition: color 100ms ease-in-out, background-color 100ms ease-in-out;
+    background-color: transparent;
   }
 }
 
 .gray-text {
-  font-style: normal;
   font-weight: 300;
+<<<<<<< HEAD
   font-size: 14px;
   line-height: 21px;
   color: #9b9b9b;
@@ -82,9 +112,63 @@ button {
   font-size: 16px;
   line-height: 24px;
   color: #E3CDB1;
+=======
+  font-size: 0.875rem;
+  line-height: 1.3125rem;
+  color: $grey;
+}
+
+.brown-text {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  color: $brown;
+>>>>>>> 261e41ed9d43205ff16e23da651b125bbfb91a8d
 
   &__bold {
     @extend .brown-text;
     font-weight: 500;
   }
+<<<<<<< HEAD
 }
+=======
+}
+
+.seemore-row {
+  margin: 2.5rem 0;
+  display: flex;
+  align-items: center;
+
+  &__button-row {
+    display: flex;
+    align-items: center;
+  }
+
+  &__line {
+    width: 35.7%;
+  }
+
+  &__button {
+    width: 28.6%;
+    display: flex;
+    justify-content: center;
+  }
+
+  @media (max-width: $max-width-sm) {
+    margin-left: auto;
+    margin-right: auto;
+    &__line {
+      display: none;
+    }
+    &__button {
+      width: 100%;
+    }
+  }
+}
+
+@media (max-width: $max-width-sm) {
+  .sm-center {
+    margin: auto;
+    text-align: center;
+  }
+}
+>>>>>>> 261e41ed9d43205ff16e23da651b125bbfb91a8d

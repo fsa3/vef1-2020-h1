@@ -4,6 +4,9 @@
   margin: 0 auto;
   max-width: 1290px;
   overflow: hidden;
+  @media (max-width: 1330px) {
+    padding: 0 10px;
+  }
 }
 
 .row {
@@ -19,7 +22,7 @@
   width: 100%;
 }
 
-@for $i from 1 through $columns {
+@for $i from 0 through $columns {
   .col-#{$i} {
     width: ($i/$columns*100) * 1%;
   }
@@ -29,7 +32,7 @@
 }
 
 @media (max-width: $max-width-md) {
-  @for $i from 1 through $columns {
+  @for $i from 0 through $columns {
     .col-md-#{$i} {
       width: ($i/$columns*100) * 1%;
     }
@@ -41,7 +44,7 @@
 }
 
 @media (max-width: $max-width-sm) {
-  @for $i from 1 through $columns {
+  @for $i from 0 through $columns {
     .col-sm-#{$i} {
       width: ($i/$columns*100) * 1%;
     }
