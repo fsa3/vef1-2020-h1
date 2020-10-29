@@ -6,7 +6,7 @@
   "scripts": {
     "install": "npm install browser-sync --save-dev npm install --save node-sass npm install --save-dev concurrently npm install --save-dev stylelint npm install --save-dev stylelint-config-sass-guidelines npm install --save-dev stylelint-config-standard",
     "browser-sync": "browser-sync start --server --files index.html styles.css",
-    "sass": "node-sass styles.scss styles.css -w",
+    "sass": "node-sass styles.scss styles.css",
     "dev": "concurrently npm:sass npm:browser-sync",
     "lint": "stylelint styles.scss ./**/*.scss"
   },
@@ -21,7 +21,7 @@
   },
   "homepage": "https://github.com/fsa3/vef1-2020-h1#readme",
   "devDependencies": {
-    "browser-sync": "^2.26.12",
+    "browser-sync": "^2.26.13",
     "concurrently": "^5.3.0",
     "install": "^0.13.0",
     "node-sass": "^4.14.1",

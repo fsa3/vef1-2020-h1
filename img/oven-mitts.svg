@@ -1,0 +1,13 @@
+<svg width="24" height="22" viewBox="0 0 24 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Level-Icon" clip-path="url(#clip0)">
+<path id="Stroke 2399" fill-rule="evenodd" clip-rule="evenodd" d="M14.7111 3.77277C13.6385 3.40168 12.4683 3.97 12.0973 5.04361L11.6428 6.35613L10.6871 4.26179C9.28209 1.18432 6.50555 -0.564357 3.42605 0.840684C0.348586 2.24674 -0.150601 5.48891 1.25444 8.5674L6.14667 19.2862L15.5794 14.9806L14.521 12.6626L16.0704 6.02876C16.2219 5.04767 15.6505 4.0981 14.7111 3.77277V3.77277Z" stroke="#E3CDB1" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Stroke 2400" fill-rule="evenodd" clip-rule="evenodd" d="M6.14844 19.286L15.5801 14.9814L16.7554 17.5536L7.32269 21.8582L6.14844 19.286V19.286Z" stroke="#E3CDB1" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Stroke 2401" d="M22.3194 14.9811L23.4937 17.5533L14.061 21.8589L12.8867 19.2857" stroke="#E3CDB1" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Stroke 2402" d="M18.5355 16.7086L22.3206 14.9813L21.2622 12.6633L22.8117 6.02846C22.9621 5.04737 22.3907 4.09882 21.4524 3.77246C20.3798 3.40138 19.2096 3.97071 18.8385 5.0433L18.384 6.35583L17.4274 4.2625C16.0223 1.18402 13.2458 -0.563644 10.1683 0.841397C9.65693 1.07421 9.21976 1.3599 8.84766 1.68727" stroke="#E3CDB1" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<defs>
+<clipPath id="clip0">
+<rect width="24" height="22" fill="white"/>
+</clipPath>
+</defs>
+</svg>
