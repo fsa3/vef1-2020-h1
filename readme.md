@@ -36,7 +36,7 @@ Eftirfarandi skriptur eru til staðar í verkefni:
 * `img` - inniheldur allar myndir verkefnis
 * `pages` - inniheldur `.html` skrár fyrir allar síður nema upphafssíðu
   * `latestrecipes.html`
-  * uppskriftarsíða
+  * `recipe.html`
   * `videorecipes.html`
 * `styles` - inniheldur alla stíla verkefnis skipt niður í `.scss` skrár
   * SKRIFA LÝSINGU Á ÖLLUM SCSS SKRÁM ÞÉGAR ÞÆR ERU KLÁRAR
