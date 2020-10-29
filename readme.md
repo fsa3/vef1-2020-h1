@@ -2,12 +2,11 @@
 
 ## Höfundar
 
-* Björn Borgar Magnússon, [bbm5@hi.is](mailto:bbm5@hi.is) 
-
+* Björn Borgar Magnússon, [bbm5@hi.is](mailto:bbm5@hi.is)
+  * github: [`bbm5`](https://github.com/BearPays)
 * Fannar Steinn Aðalsteinsson, [fsa3@hi.is](mailto:fsa3@hi.is)
-
+  * github: [`fsa3`](https://github.com/fsa3)
 * Ármann Schelander, [ars90@hi.is](mailto:ars90@hi.is)
-
 * Páll Freyr Pálsson, [pfp2@hi.is](mailto:pfp2@hi.is)
 
 ## Global styles
