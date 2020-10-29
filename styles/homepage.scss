@@ -2,7 +2,7 @@
 
 .hero {
   height: 90vh;
-  background-color: #FAFAFA;
+  background-color: $background-gray;
 
   background-image: url(./img/cake-background.png);
   background-repeat: no-repeat;
@@ -40,7 +40,6 @@
 }
 
 .latest-recipes {
-  background: linear-gradient(0deg, #FAFAFA 65%, #FFFFFF 50%);
   display: flex;
   align-items: center;
   padding-top: 8rem;
@@ -49,10 +48,12 @@
   &__title {
     margin-bottom: 1.875rem;
   }
+
+  @include media-part-background(40%, 30%, 15%, $background-gray);
 }
 
 .book {
-  background: linear-gradient(180deg, #F7F1EB 75%, #FFFFFF 50%);
+  @include part-background(15%, $background-brown, false);
 
   display: flex;
   align-items: center;
@@ -90,7 +91,8 @@
 }
 
 .bottom-recipes {
-  background: linear-gradient(180deg, #FFFFFF 50%, #FAFAFA 50%);
   padding-top: 3rem;
   padding-bottom: 5rem;
+
+  @include media-part-background(40%, 45%, 25%, $background-gray);
 }

@@ -1,7 +1,7 @@
 @import './config';
 
 header {
-  background-color: #FFFFFF;
+  background-color: $white;
   height: 70px;
   width: 100%;
   position: sticky;
@@ -51,7 +51,7 @@ header {
   }
 
   .nav-icon {
-    background-color: #000000;
+    background-color: $black;
     display: block;
     height: 2px;
     width: 30px;
@@ -83,12 +83,12 @@ header {
   }
   .menu-btn:checked ~ .menu-icon .nav-icon:before {
     top: 0;
-    background-color: #000000;
+    background-color: $black;
     transform: rotate(-45deg);
   }
   .menu-btn:checked ~ .menu-icon .nav-icon:after {
     top: 0;
-    background-color: #000000;
+    background-color: $black;
     transform: rotate(45deg);
   }
 
@@ -117,7 +117,7 @@ header {
       height: 80vh;
       width: 100%;
       top: 69px;
-      background-color: #FAFAFA;
+      background-color: $background-gray;
       display: flex;
       flex-direction: column;
       justify-content: space-around;
@@ -136,5 +136,4 @@ header {
       line-height: 7rem;
     }
   }
-
 }

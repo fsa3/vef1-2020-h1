@@ -28,7 +28,7 @@ h1 {
   font-weight: bold;
   font-size: 3.75rem;
   line-height: 5rem;
-  color: #000000;
+  color: $black;
   @media(max-width: $max-width-md) {
     font-size: 3rem;
   }
@@ -43,7 +43,7 @@ h2 {
   line-height: 3.3125rem;
 
   span {
-    color: #D0D0D0;
+    color: $light-grey;
   }
 
   @media(max-width: $max-width-sm) {
