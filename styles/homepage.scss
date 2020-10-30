@@ -20,8 +20,11 @@
   }
 
   p {
-    margin-top: 1rem;
     color: #5E5B69;
+  }
+
+  .rec-info {
+    margin-top: 1rem;
   }
 
   .rec-tags {
@@ -37,6 +40,7 @@
 
     div {
       display: flex;
+      align-content: center;
       margin-right: 40px;
       margin-top: 20px;
     }
@@ -87,7 +91,7 @@
 }
 
 .video-rec-hero {
-  height: 570px;
+  height: 35rem;
   background-color: transparent;
   background-image: none;
   position: relative;
