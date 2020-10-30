@@ -2,11 +2,10 @@
 
 .subscribe {
   background-color: $black;
-  height: 21.25rem;
   color: $white;
-
   display: flex;
   flex-direction: column;
+  height: 21.25rem;
   justify-content: center;
 
   .grid {
@@ -18,32 +17,33 @@
   }
 
   .email-label {
-    font-weight: 500;
     font-size: 0.875rem;
+    font-weight: 500;
     line-height: 1.3rem;
-    @media(max-width: $max-width-sm) {
+
+    @media (max-width: $max-width-sm) {
       margin-top: 2rem;
     }
   }
 
   input {
-    width: 100%;
     background-color: transparent;
-    font-weight: bold;
-    font-size: 1.375rem;
-    font-family: 'Playfair Display', serif;
-    line-height: 1.8125rem;
-    color: $white;
-    padding-bottom: 0.75rem;
-    border: none;
+    border: transparent;
     border-bottom: 1px solid $white;
+    color: $white;
+    font-family: 'Playfair Display', serif;
+    font-size: 1.375rem;
+    font-weight: bold;
+    line-height: 1.8125rem;
+    padding-bottom: 0.75rem;
+    width: 100%;
 
     &:focus {
-      outline: none;
       border-bottom: 1px solid $brown;
+      outline: none;
     }
 
-    @media(max-width: $max-width-md) {
+    @media (max-width: $max-width-md) {
       font-size: 1.15rem;
     }
   }
@@ -70,14 +70,14 @@
   }
 
   &__content {
-    text-align: center;
-    margin-top: auto;
-    margin-bottom: auto;
-    height: 40%;
+    align-items: center;
     display: flex;
     flex-direction: column;
+    height: 40%;
     justify-content: space-between;
-    align-items: center;
+    margin-bottom: auto;
+    margin-top: auto;
+    text-align: center;
   }
 
   &__links {
