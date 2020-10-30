@@ -1,38 +1,5 @@
 @import './config.scss';
 
-.all-recipes {
-  margin-top: 3.125rem;
-  @include media-part-background(10%, 6%, 4%, $background-gray);
-}
-
-.checkbox{
-  display: flex;
-  align-items: baseline;
-  height: 100%;
-  align-items: flex-end;
-
-  input{
-    width:22px;
-    height:22px;
-    margin-right: 1rem;
-    background:transparent;
-  }
-
-  &__align{
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    width: 100%;
-    padding: 0 1rem;
-  }
-
-  @media (max-width: $max-width-sm) {
-    &__align {
-      justify-content: center;
-    }
-  }
-}
-
 .box{
   margin-top: 1.4rem;
 
@@ -86,4 +53,3 @@
     display: none;
   }
 }
-

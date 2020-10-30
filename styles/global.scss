@@ -55,6 +55,7 @@ h3 {
   font-weight: bold;
   font-size: 1.375rem;
   line-height: 1.8125rem;
+
   @media(max-width: $max-width-md) {
     font-size: 1.4rem;
   }
@@ -133,9 +134,11 @@ button {
   @media (max-width: $max-width-sm) {
     margin-left: auto;
     margin-right: auto;
+
     &__line {
       display: none;
     }
+
     &__button {
       width: 100%;
     }
