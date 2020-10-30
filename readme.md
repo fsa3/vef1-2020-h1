@@ -9,14 +9,6 @@
 * Ármann Schelander, [ars90@hi.is](mailto:ars90@hi.is)
 * Páll Freyr Pálsson, [pfp2@hi.is](mailto:pfp2@hi.is)
 
-## Global styles
-
-Búið að skilgreina style fyrir h1, h2 0g h3 þannig nota það alls staðar þar sem á við.
-
-Líka búinn að skilgreina klasana .brown-text og .brown-text__bold og gray-text
-
-Þannig það ætti að vera hægt að nota þessa styles á mjög mikið af texta í verkefninu og það nægir líka á mörgum stöðum að skilgreina bara h1, h2 osfrv þar sem það eru komnir stílar á það
-
 ## Skriptur og keyrsla á verkefni
 
 Eftirfarandi skriptur eru til staðar í verkefni: 
@@ -30,14 +22,22 @@ Eftirfarandi skriptur eru til staðar í verkefni:
 
 ## Uppsetning verkefnis
 
-Í rót verkefnis eru `index.html` (upphafssíða), `styles.scss` (stílar verkefnis sameinaðir í eina skrá) ásamt skrám sem halda utan um stillingar á git, ritli, stylelint og npm tólum.
+Í rót verkefnis eru [`index.html`](./index.html) (upphafssíða), [`styles.scss`](./styles.scss) (stílar verkefnis importaðir í eina skrá) ásamt skrám sem halda utan um stillingar á git, ritli, stylelint og npm tólum.
 
-Í rót eru síðan eftirfarandi möppur með eftirfarandi skrám:
+### Í rót eru síðan eftirfarandi möppur með eftirfarandi skrám:
 
-* `img` - inniheldur allar myndir verkefnis
-* `pages` - inniheldur `.html` skrár fyrir allar síður nema upphafssíðu
-  * `latestrecipes.html`
-  * `recipe.html`
-  * `videorecipes.html`
-* `styles` - inniheldur alla stíla verkefnis skipt niður í `.scss` skrár
-  * SKRIFA LÝSINGU Á ÖLLUM SCSS SKRÁM ÞÉGAR ÞÆR ERU KLÁRAR
+* [`/img`](./img) - inniheldur allar myndir verkefnis
+* [`/pages`](./pages) - inniheldur `.html` skrár fyrir allar síður nema upphafssíðu
+  * [`latestrecipes.html`](./pages/latestrecipes.html)
+  * [`recipe.html`](./pages/recipe.html)
+  * [`videorecipes.html`](./pages/videorecipes.html)
+* [`/styles`](./styles) - inniheldur alla stíla verkefnis skipt niður í `.scss` skrár
+  * [`box.scss`](./styles/box.scss) - inniheldur stíla fyrir þau "uppskriftarbox" sem eru í verkefninu
+  * [`config.scss`](./styles/config.scss) - inniheldur breytur og 'mixin'
+  * [`footer.scss`](./styles/footer.scss) - inniheldr stíla fyrir sameiginlega fót síðanna í verkefninu
+  * [`global.scss`](./styles/global.scss) - inniheldur global stíla sem eiga við allar síður verkefnisins eins og til dæmis grunnstillingar
+  * [`grid.scss`](./styles/grid.scss) - inniheldur klasana fyrir grid, notar for-lykkju til þess að ítra út grid klösum
+  * [`header.scss`](./styles/header.scss) - inniheldur stíla fyrir sameiginlega haus síðanna í verkefninu
+  * [`hero.scss`](./styles/hero.scss) - inniheldur stíla fyrir 'hero' svæði síðanna í verkefninu
+  * [`recipe.scss`](./styles/recipe.scss) - inniheldur stíla fyrir uppskriftir sem eru í verkefninu
+  * [`sections.scss`](./styles/sections.scss) - inniheldur stíla fyrir einstök 'sections' sem eru á síðum verkefnis
