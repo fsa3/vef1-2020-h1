@@ -1,5 +1,7 @@
 # Hópaverkefni 1 - Vefforritun 1
 
+Verkefnið má nálgast á vef með því að smella [hér](https://notendur.hi.is/~fsa3/vefforritun/hopverk1)
+
 ## Höfundar
 
 * Björn Borgar Magnússon, [bbm5@hi.is](mailto:bbm5@hi.is)
