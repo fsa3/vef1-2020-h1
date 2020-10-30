@@ -3,11 +3,13 @@
 ## Höfundar
 
 * Björn Borgar Magnússon, [bbm5@hi.is](mailto:bbm5@hi.is)
-  * github: [`bbm5`](https://github.com/BearPays)
+  * github: [`BearPays`](https://github.com/BearPays)
 * Fannar Steinn Aðalsteinsson, [fsa3@hi.is](mailto:fsa3@hi.is)
   * github: [`fsa3`](https://github.com/fsa3)
 * Ármann Schelander, [ars90@hi.is](mailto:ars90@hi.is)
+  * github: `Armann-Sch`
 * Páll Freyr Pálsson, [pfp2@hi.is](mailto:pfp2@hi.is)
+  * github: `PallFreyr`
 
 ## Skriptur og keyrsla á verkefni
 
@@ -35,7 +37,7 @@ Eftirfarandi skriptur eru til staðar í verkefni:
   * [`box.scss`](./styles/box.scss) - inniheldur stíla fyrir þau "uppskriftarbox" sem eru í verkefninu
   * [`config.scss`](./styles/config.scss) - inniheldur breytur og 'mixin'
   * [`footer.scss`](./styles/footer.scss) - inniheldr stíla fyrir sameiginlega fót síðanna í verkefninu
-  * [`global.scss`](./styles/global.scss) - inniheldur global stíla sem eiga við allar síður verkefnisins eins og til dæmis grunnstillingar
+  * [`global.scss`](./styles/global.scss) - inniheldur 'global' stíla á 'elementum' sem eiga við allar síður verkefnisins eins og til dæmis grunnstillingar
   * [`grid.scss`](./styles/grid.scss) - inniheldur klasana fyrir grid, notar for-lykkju til þess að ítra út grid klösum
   * [`header.scss`](./styles/header.scss) - inniheldur stíla fyrir sameiginlega haus síðanna í verkefninu
   * [`hero.scss`](./styles/hero.scss) - inniheldur stíla fyrir 'hero' svæði síðanna í verkefninu

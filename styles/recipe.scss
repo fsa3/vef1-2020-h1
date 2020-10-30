@@ -1,48 +1,48 @@
 @import './config';
 
 .recipe {
-  margin-top: 3rem;
   margin-bottom: 8rem;
+  margin-top: 3rem;
 
-  .m-t-header{
-    margin-top: 3rem;
+  .m-t-header {
     color: $light-grey;
+    margin-top: 3rem;
   }
 
-  @media(max-width: $max-width-md) {
+  @media (max-width: $max-width-md) {
     h2 {
       font-size: 1.8rem;
     }
   }
 
   .m-t-ing {
-    margin-top: 2.5rem;
     margin-bottom: 1.25rem;
+    margin-top: 2.5rem;
   }
 
   .ingredient {
-    display: flex;
     align-items: center;
+    display: flex;
     margin-bottom: 1.25rem;
   }
 
   .ingtext {
-    margin-left: 1.15rem;
     color: $grey;
+    margin-left: 1.15rem;
   }
 
   .rec-num {
     font-family: 'Playfair Display', serif;
     font-size: 2.25rem;
-    line-height: 1.125rem;
-    width: 1.1rem;
-    vertical-align: middle;
     height: 1.9rem;
+    line-height: 1.125rem;
+    vertical-align: middle;
+    width: 1.1rem;
   }
 
   .m-t-met {
+    color: #5e5b69;
     margin-top: 2.2rem;
-    color: #5E5B69;
   }
 
   .m-t-met p {

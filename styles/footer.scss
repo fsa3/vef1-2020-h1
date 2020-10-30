@@ -38,20 +38,21 @@
     padding-bottom: 0.75rem;
     width: 100%;
 
-    &:focus {
-      border-bottom: 1px solid $brown;
-      outline: none;
-    }
-
     @media (max-width: $max-width-md) {
       font-size: 1.15rem;
     }
   }
 
-  &__button{
+  input:focus {
+    border-bottom: 1px solid $brown;
+    outline: none;
+  }
+
+  &__button {
     display: flex;
     justify-content: flex-end;
-    @media(max-width: $max-width-sm) {
+
+    @media (max-width: $max-width-sm) {
       justify-content: center;
       margin-top: 3rem;
     }
@@ -82,10 +83,11 @@
 
   &__links {
     width: 100%;
-    :nth-child(2) {
-      margin-left: 1rem;
-      margin-right: 1rem;
-    }
+  }
+
+  &__links :nth-child(2) {
+    margin-left: 1rem;
+    margin-right: 1rem;
   }
 
   a {

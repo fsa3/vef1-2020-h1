@@ -1,17 +1,17 @@
 @import './config';
 
 .hero {
-  height: 90vh;
   background-color: $background-gray;
-
-  background-image: url(./img/cake-background.png);
-  background-repeat: no-repeat;
+  background-image: url('./img/cake-background.png');
   background-position: bottom right;
+  background-repeat: no-repeat;
+  height: 90vh;
+  min-height: 30rem;
 
   .grid {
-    height: 100%;
     display: flex;
     flex-direction: column;
+    height: 100%;
     justify-content: center;
   }
 
@@ -20,7 +20,7 @@
   }
 
   p {
-    color: #5E5B69;
+    color: #5e5b69;
   }
 
   .rec-info {
@@ -37,17 +37,17 @@
     @media (max-width: 750px) {
       display: none;
     }
+  }
 
-    div {
-      display: flex;
-      align-content: center;
-      margin-right: 40px;
-      margin-top: 20px;
-    }
+  .rec-tags div {
+    align-content: center;
+    display: flex;
+    margin-right: 40px;
+    margin-top: 20px;
+  }
 
-    img {
-      margin-right: 1rem;
-    }
+  .rec-tags img {
+    margin-right: 1rem;
   }
 
   .rec-tags-bottom {
@@ -55,12 +55,12 @@
   }
 
   @media (max-width: 750px) {
-    background-size: cover;
     background-position: center;
+    background-size: cover;
 
     .grid {
-      padding-top: 5rem;
       justify-content: flex-start;
+      padding-top: 5rem;
     }
 
     .col-sm-10 {
@@ -68,15 +68,16 @@
     }
 
     .col-sm-12 {
-      width: 100%;
       text-align: center;
+      width: 100%;
     }
 
     .offset-col-sm-1 {
       margin-left: 8.333333333333%;
     }
 
-    .hp-text, span {
+    .hp-text,
+    span {
       display: none;
     }
 
@@ -91,56 +92,57 @@
 }
 
 .video-rec-hero {
-  height: 35rem;
   background-color: transparent;
   background-image: none;
+  height: 35rem;
   position: relative;
 
   p {
     color: $grey;
   }
 
-  h1, .rec-tags p {
+  h1,
+  .rec-tags p {
     color: $white;
   }
 
   &::after {
+    background: linear-gradient(270deg, rgba(0, 0, 0, 0.0001) 0%, $black 1000px);
     content: '';
-    position: absolute;
     height: 100%;
-    width: 100%;
+    position: absolute;
     top: 0;
+    width: 100%;
     z-index: -1;
-    background: linear-gradient(270deg, rgba(0, 0, 0, 0.0001) 0%, #000000 1000px);
   }
 
   &::before {
+    background-image: url('./img/video-rec-play-icon.png');
+    background-position: center;
+    background-repeat: no-repeat;
     content: '';
     cursor: pointer;
-    position: absolute;
     height: 100%;
-    width: 1000px;
-    top: 0;
+    position: absolute;
     right: 0;
+    top: 0;
+    width: 1000px;
     z-index: 2;
-    background-image: url(./img/video-rec-play-icon.png);
-    background-repeat: no-repeat;
-    background-position: center;
   }
 
   .hero-video {
-    position: absolute;
     height: 100%;
-    top: 0;
-    right: 0;
-    z-index: -1;
     overflow: hidden;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: -1;
   }
 }
 
 @media (max-width: 1150px) {
   .video-rec-hero::after {
-    background: linear-gradient(270deg, rgba(0, 0, 0, 0.0001) 0%, #000000 70%);
+    background: linear-gradient(270deg, rgba(0, 0, 0, 0.0001) 0%, $black 70%);
   }
 
   .video-rec-hero::before {
@@ -163,39 +165,39 @@
   }
 
   .video-rec-hero .hero-video {
+    margin: 2rem auto;
     position: relative;
     width: 80%;
-    margin: 2rem auto;
     z-index: 0;
 
     &::after {
-      content: '';
-      position: absolute;
-      height: 100%;
-      width: 100%;
-      top: 0;
-      left: 0;
       background-color: rgba(0, 0, 0, 0.5);
+      content: '';
+      height: 100%;
+      left: 0;
+      position: absolute;
+      top: 0;
+      width: 100%;
     }
 
     &::before {
+      background-image: url('./img/video-rec-play-icon.png');
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: 30%;
       content: '';
       cursor: pointer;
-      position: absolute;
       height: 100%;
-      width: 100%;
-      top: 0;
       left: 0;
-      background-image: url(./img/video-rec-play-icon.png);
-      background-repeat: no-repeat;
-      background-position: center;
-      background-size: 30%;
+      position: absolute;
+      top: 0;
+      width: 100%;
       z-index: 2;
     }
 
     img {
-      width: 100%;
       object-fit: contain;
+      width: 100%;
     }
   }
 }

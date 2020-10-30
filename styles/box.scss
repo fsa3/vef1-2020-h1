@@ -1,13 +1,13 @@
-@import './config.scss';
+@import './config';
 
-.box{
+.box {
   margin-top: 1.4rem;
 
-  &__text{
+  &__text {
+    align-items: flex-end;
     background-color: $white;
     display: flex;
     justify-content: space-between;
-    align-items: flex-end;
     margin-top: -10px;
     padding: 1.4rem;
   }
@@ -17,28 +17,29 @@
   }
 
   &__hover-color {
-    transition: background-color 200ms ease-out;
-    position: absolute;
-    cursor: pointer;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 97.7%;
-    width: 100%;
     background-color: rgba(227, 205, 177, 0);
+    bottom: 0;
+    cursor: pointer;
+    height: 97.7%;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition: background-color 200ms ease-out;
+    width: 100%;
   }
 
   &:hover &__hover-color {
-    background: url(./img/Play-Icon.svg) no-repeat center;
+    background: url('./img/Play-Icon.svg') no-repeat center;
     background-color: rgba(227, 205, 177, 0.7);
   }
 
   img {
+    background-color: #f6f6f6;
     height: 100%;
-    width: 100%;
     max-height: 290px;
     object-fit: cover;
+    width: 100%;
   }
 }
 

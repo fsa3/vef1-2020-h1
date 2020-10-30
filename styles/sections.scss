@@ -3,10 +3,8 @@
 .book {
   @include part-background(15%, $background-brown, false);
 
-  display: flex;
   align-items: center;
-
-  padding-top: 5rem;
+  display: flex;
   padding-top: 4rem;
 
   &__content {
@@ -25,10 +23,10 @@
   }
 
   img {
-    object-fit: scale-down;
-    max-width: 100%;
-    margin-bottom: 8px;
     box-shadow: -5px 5px 24px rgba(0, 0, 0, 0.2);
+    margin-bottom: 8px;
+    max-width: 100%;
+    object-fit: scale-down;
   }
 
   @media (max-width: 700px) {
@@ -39,50 +37,60 @@
 }
 
 .latest-recipes {
-  display: flex;
+  @include media-part-background(40%, 30%, 15%, $background-gray);
+
   align-items: center;
-  padding-top: 8rem;
+  display: flex;
   padding-bottom: 5rem;
+  padding-top: 8rem;
 
   &__title {
     margin-bottom: 1.875rem;
   }
-
-  @include media-part-background(40%, 30%, 15%, $background-gray);
 }
 
 .bottom-recipes {
-  padding-top: 3rem;
-  padding-bottom: 5rem;
-
   @include media-part-background(40%, 45%, 25%, $background-gray);
-}
 
+  padding-bottom: 5rem;
+  padding-top: 3rem;
+}
 
 .all-recipes {
-  margin-top: 3.125rem;
   @include media-part-background(10%, 6%, 4%, $background-gray);
+
+  margin-top: 3.125rem;
 }
 
-.checkbox{
-  display: flex;
-  align-items: baseline;
-  height: 100%;
+.checkbox {
   align-items: flex-end;
+  display: flex;
+  height: 100%;
 
-  input{
-    width:22px;
-    height:22px;
+  input {
+    background: transparent;
+    height: 22px;
     margin-right: 1rem;
-    background:transparent;
+    width: 22px;
   }
 
-  &__align{
+  label {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.375rem;
+    font-weight: bold;
+    line-height: 1.8125rem;
+
+    @media (max-width: $max-width-md) {
+      font-size: 1.2rem;
+    }
+  }
+
+  &__align {
+    align-items: center;
     display: flex;
     justify-content: flex-end;
-    align-items: center;
-    width: 100%;
     padding: 0 1rem;
+    width: 100%;
   }
 
   @media (max-width: $max-width-sm) {
