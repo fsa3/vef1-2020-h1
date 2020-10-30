@@ -6,7 +6,7 @@
   "scripts": {
     "install": "npm install browser-sync --save-dev npm install --save node-sass npm install --save-dev concurrently npm install --save-dev stylelint npm install --save-dev stylelint-config-sass-guidelines npm install --save-dev stylelint-config-standard",
     "browser-sync": "browser-sync start --server --files index.html styles.css",
-    "sass": "node-sass styles.scss styles.css",
+    "sass": "node-sass styles.scss styles.css -w",
     "dev": "concurrently npm:sass npm:browser-sync",
     "lint": "stylelint styles.scss ./**/*.scss"
   },
