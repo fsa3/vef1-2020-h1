@@ -1,26 +1,49 @@
-.ppie {
-  margin-top: 20px;
-  width: 550px;
-  height: 128px;
-}
+@import './config';
 
-.m-t-ing {
-  margin-top: 40px;
-}
+.recipe {
+  margin-top: 3rem;
+  margin-bottom: 8rem;
 
-.m-t-met {
-  margin-top: 35px;
-}
+  .m-t-header{
+    margin-top: 3rem;
+    color: $light-grey;
+  }
 
-.m-t-header{
-  margin-top: 90px;
-}
+  @media(max-width: $max-width-md) {
+    h2 {
+      font-size: 1.8rem;
+    }
+  }
 
-.ingtext {
-  margin-left: 65px;
-}
+  .m-t-ing {
+    margin-top: 2.5rem;
+    margin-bottom: 1.25rem;
+  }
 
-.inline {
-  display: inline-block;
-}
+  .ingredient {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.25rem;
+  }
 
+  .ingtext {
+    margin-left: 1.15rem;
+    color: $grey;
+  }
+
+  .rec-num {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.25rem;
+    line-height: 1.125rem;
+    width: 1.1rem;
+    vertical-align: middle;
+    height: 1.9rem;
+  }
+
+  .m-t-met {
+    margin-top: 2.2rem;
+    p {
+      margin-bottom: 1rem;
+    }
+  }
+}
