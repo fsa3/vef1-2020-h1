@@ -16,9 +16,10 @@
     position: relative;
   }
 
-  &__hover-color {
+  &__hover-color::after {
     background-color: rgba(227, 205, 177, 0);
     bottom: 0;
+    content: '';
     cursor: pointer;
     height: 97.7%;
     left: 0;
@@ -29,7 +30,7 @@
     width: 100%;
   }
 
-  &:hover &__hover-color {
+  &:hover &__hover-color::after {
     background: url('./img/Play-Icon.svg') no-repeat center;
     background-color: rgba(227, 205, 177, 0.7);
   }
