@@ -31,7 +31,7 @@ Eftirfarandi skriptur eru til staðar í verkefni:
 ### Í rót eru síðan eftirfarandi möppur með eftirfarandi skrám:
 
 * [`/img`](./img) - inniheldur allar myndir verkefnis
-* [`/pages`](./pages) - inniheldur `.html` skrár fyrir allar síður nema upphafssíðu
+* [`/pages`](./Pages) - inniheldur `.html` skrár fyrir allar síður nema upphafssíðu
   * [`latestrecipes.html`](./pages/latestrecipes.html)
   * [`recipe.html`](./pages/recipe.html)
   * [`videorecipes.html`](./pages/videorecipes.html)
